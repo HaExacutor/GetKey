@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>R�zu Key Generator</title>
+        <link rel="icon" href="rose2.jpg">
+    </head>
+    <p align="center" id="date" style="color:#ffffff"></p></pre></pre></span>
+    <p align="center" id="clockDisplay" style="color:#ffffff;">
+     
+    <p>
+    </p>
+    <body>
+            
+        <img src="rose2.jpg" class = "no">
+        <br>
+        <br>
+        <div style="text-align:center;">
+            <button  onmousedown="newQuotes()"onclick="this.disabled=true;"onclick="but" onmousedown="this.hide=true">Get Key </button>
+        </div>
+        <script src="javascript.js"></script>
+        <style>
+            .no {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 5%;
+            }
+            h2 {text-align:center;}
+            div {text-align:center;}
+            button {
+            background-color: #f5476b;
+            border-color: #f5476b;
+            }
+            style {margin: -4cm;}
+            body { 
+            background-color: #1c1819 
+            }
+            #form-control {
+            background-color: #1c1819 
+            }
+        </style>
+        <script>
+            var loc = window.location.href+'';
+            if (loc.indexOf('http://')==0){
+                window.location.href = loc.replace('http://','https://');
+            }
+        </script>
+        <button style="position: fixed; bottom: 0; width:98.6%; text-align: center" onclick="window.open('https://discordapp.com/invite/6XVnbRb','_blank')">The Discord</button>
+        <div id="form-control" id="keyDisplay" >
+        </input>
+        <div id="keyDisplay" type="submit" style="margin-bottom:25px;color:#ee0f0f;margin-top:10px;" value="Get Key">
+        <div style="font-size:13px;"></div>
+        <script>
+            if (sessionStorage.getItem('beenhere') ==='1') {
+                window.location="https://haexacutor.github.io/stopitthankok/";
+            }
+            sessionStorage.setItem('beenhere', '1');
+        </script>
+<script type="text/javascript">
+  window.onkeydown = function(evt) {
+      if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73 || evt.keyCode == 8 || evt.KeyCode == 13 || evt.KeyCode == 16 || evt.KeyCode == 17 || evt.KeyCode == 83) return false;
+e.preventDefault();
+  };
+
+  window.onkeypress = function(evt) {
+      if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73 || evt.keyCode == 8 || evt.KeyCode == 13 || evt.KeyCode == 16 || evt.KeyCode == 17 || evt.KeyCode == 83) return false;
+  
+e.preventDefault();
+  };
+
+  window.onkeyup = function(evt) {
+      if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73 || evt.keyCode == 8 || evt.KeyCode == 13 || evt.KeyCode == 16 || evt.KeyCode == 17 || evt.KeyCode == 83) return false;
+  document.onkeydown = function (e) {
+  e = e || window.event;
+  if (e.ctrlKey) {
+      var c = e.which || e.keyCode;
+      switch (c) {
+          case 83://Block Ctrl+S
+          case 87://Block Ctrl+W
+              e.preventDefault();     
+              e.stopPropagation();
+          break;
+      }
+  }
+};
+  };
+
+function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
+$(document).on("keydown", disableF5);
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+</script>
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</script>
+<script>
+var x = 0;
+
+var titleText = [ "K", "Ke", "Key", "Key G","Key Gena", "Key Genar", "Key Genara", "Key Genarat","Key Genarato", "Key Genarator"];
+
+function loop() {
+if (document.getElementsByTagName("title").length > 0)
+document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+}
+
+setInterval(loop, 350);
+</script>
+<script type="text/javascript">
+    function renderTime() {
+    var currentTime = new Date();
+    var diem = "AM";
+    var h = currentTime.getHours();
+    var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+    setTimeout('renderTime()',1000);
+    if (h == 0) {
+      h = 12;
+    } else if (h > 12) { 
+      h = h - 12;
+      diem="PM";
+    }
+    if (h < 10) {
+      h = "0" + h;
+    }
+    if (m < 10) {
+      m = "0" + m;
+    }
+    if (s < 10) {
+      s = "0" + s;
+    }
+    var myClock = document.getElementById('clockDisplay');
+    myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+    myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+    }
+    renderTime();
+  </script>
+  <script>
+var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin
+if(nsec<=9) nsec="0"+nsec;
+document.getElementById('date').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
+}
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<script>
+  function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+</html>
+
